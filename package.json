@@ -1,7 +1,7 @@
 {
-  "name": "priceproof",
+  "name": "priceproof-backend",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {"install:all": "npm install --prefix backend && npm install --prefix frontend", "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""},
-  "devDependencies": {"concurrently": "^9.1.2"}
+  "type": "module",
+  "scripts": {"dev": "node --watch server.js", "start": "node server.js"},
+  "dependencies": {"@google/genai": "^1.11.0", "cors": "^2.8.5", "dotenv": "^16.4.7", "express": "^4.21.2"}
 }
